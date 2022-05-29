@@ -54,3 +54,15 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+gem 'annotate'
+gem 'bootstrap'
+gem 'simple_form', github: 'heartcombo/simple_form'
+gem 'rspec-rails'
+gem 'factory_bot_rails'
+gem 'database_cleaner'
+gem 'shoulda-matchers'
+gem 'rubocop-rails', require: false
+gem 'rubocop-rspec', require: false
+gem 'faker'
