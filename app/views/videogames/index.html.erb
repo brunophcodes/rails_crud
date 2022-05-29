@@ -1,25 +1,22 @@
 <div class="container-md">
-  <h5 class="mt-5"> Your Wishlist </h5>
-  <div class="d-flex mt-3" style="width:100%">
-    <div class="row">
-    <% @videogames.each do |game| %>
-      <div class="card m-2 rounded-card px-0 shadow" style="width: 18rem;">
-        <%= image_tag('https://cdn1.epicgames.com/offer/3ddd6a590da64e3686042d108968a6b2/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7',class:"img-thumbnail") %>
-        <div class="card-body">
-          <h5 class="card-title"><%= game.title %></h5>
-          <p class="card-text">Price: <%= number_to_currency(game.price) %></p>
-        </div>
-          <p class="text-center">
-            <%= link_to "Show", videogame_path(game) %> |
-            <%= link_to "Edit", edit_videogame_path(game) %> |
-            <%= link_to "Delete", videogame_path(game), method: :delete, data: {confirm: "Are you sure?"} %>
-          </p>
-        </div>
+  <h5 class="mt-5"> Your Wishlist </h5> <%= link_to "Add game", new_videogame_path, class: "btn btn-success"%>
+    <div class="d-flex mt-3" style="width:100%">
+      <div class="row">
+        <% @videogames.each do |game| %>
+          <div class="card m-2 rounded-card px-0 shadow" style="width: 18rem;">
+            <%= image_tag("#{game.url}", height:"286px") %>
+            <div class="card-body">
+              <h5 class="card-title"><%= game.title %></h5>
+              <p class="card-text">Price: <%= number_to_currency(game.price) %></p>
+            </div>
+              <p class="text-center">
+                <%= link_to "Show", videogame_path(game) %> |
+                <%= link_to "Edit", edit_videogame_path(game) %> |
+                <%= link_to "Delete", videogame_path(game), method: :delete, data: {confirm: "Are you sure?"} %>
+              </p>
+            </div>
+        <% end %>
       </div>
-      <% end %>
     </div>
-  </div>
-  <div class="container">
-    <%= link_to "Add game", new_videogame_path, class: "btn btn-success"%>
   </div>
 </div>
