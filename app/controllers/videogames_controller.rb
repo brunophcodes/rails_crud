@@ -15,6 +15,7 @@ class VideogamesController < ApplicationController
   def create
     @videogame = Videogame.new(videogame_params)
     @videogame.save!
+    redirect_to videogames_path
   end
 
   def edit
@@ -22,6 +23,7 @@ class VideogamesController < ApplicationController
 
   def update
     @videogame.update(videogame_params)
+    redirect_to videogame_path
   end
 
   def destroy
