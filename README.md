@@ -37,7 +37,7 @@ This is an application that allows you to add different games that you want to p
  ![image](https://user-images.githubusercontent.com/87345401/170895618-fbf52263-7f83-4020-a0df-25ba6a5f6b70.png)
 
  * URL: #index /videogames
- ![image](https://user-images.githubusercontent.com/87345401/170895641-f1da5706-5bcf-4ca2-b6c5-32507b426e89.png)
+ ![image](https://user-images.githubusercontent.com/87345401/170897333-66538683-0795-4c8d-bdec-9f992fcf9da1.png)
 
  * URL: #new /videogames/new
  ![image](https://user-images.githubusercontent.com/87345401/170895674-809360fa-a2be-4ec5-9321-ffdd249b3493.png)
