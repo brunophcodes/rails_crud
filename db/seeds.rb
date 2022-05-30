@@ -95,5 +95,5 @@ game_8 = Videogame.create({
   platform: "PC",
   developer: "Flying Wild Hog",
   release_date: "2022-03-01",
-  url:"https://i.blogs.es/83ba3a/monster-hunter-rise-sunbreak/1366_2000.jpeg"
+  url:"https://image.api.playstation.com/vulcan/ap/rnd/202107/2401/WdFb9QYf8U3oj8NHMsMfWxe5.png"
 })
